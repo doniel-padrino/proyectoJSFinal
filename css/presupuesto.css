@@ -1,0 +1,133 @@
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-image: url('../assets/images/index/una-escena-de-fantasia-con-elementos-surrealistas-y-una-atmosfera-mistica.jpg');
+        background-size: 100% 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+   
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    form {
+        width: 80%;;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    fieldset {
+        border: none;
+        margin-bottom: 20px;
+    }
+    legend {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+        display: block;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+        color: #444;
+    }
+    input, select {
+        padding: 8px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-top: 5px;
+        font-size: 1em;
+    }
+    input:invalid {
+        border-color: #dc3545;
+    }
+    .extras label {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .extras1{
+        text-align: center;
+    }
+
+    .extras2{
+        text-align: center;
+        padding-right: 5%;
+    }
+
+    .extras3{
+        text-align: center;
+        padding-right: 4%;
+    }
+
+
+    .total {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #28a745;
+        margin-top: 15px;
+    }
+
+    .condiciones{
+        width: 100%;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+
+        
+    }
+
+    .condiciones label{
+        width: 40%;
+    }
+
+    .condiciones input{
+        display: flex;
+        width: 5%;
+    }    
+
+    .botones {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button[type="submit"] {
+        background: #007bff;
+        color: white;
+    }
+    button[type="reset"] {
+        background: #6c757d;
+        color: white;
+    }
+    button:hover {
+        opacity: 0.9;
+    }
+    .error {
+        font-size: 0.85em;
+        color: #dc3545;
+        display: none;
+    }

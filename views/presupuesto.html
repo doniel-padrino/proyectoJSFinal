@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Mi Página Web</title>
+  <!--Estilos-->
+  <link rel="stylesheet" href="../css/style.css" >
+  <link rel="stylesheet" href="../css/presupuesto.css">
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mi Web</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="#">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="linea"></span>
+        <span class="linea"></span>
+        <span class="linea"></span>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+
+    <h1>Calculadora de Presupuesto</h1>
+
+    <form id="formPresupuesto" novalidate>
+        <!-- Datos de contacto -->
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label>Nombre:
+                <input type="text" id="nombre" maxlength="15" required>
+                <span class="error" id="errorNombre">Solo letras (máx. 15)</span>
+            </label>
+
+            <label>Apellido:
+                <input type="text" id="apellido" maxlength="40" required>
+                <span class="error" id="errorApellido">Solo letras (máx. 40)</span>
+            </label>
+
+            <label>Teléfono:
+                <input type="text" id="telefono" maxlength="9" required>
+                <span class="error" id="errorTelefono">Solo 9 dígitos</span>
+            </label>
+
+            <label>Correo electrónico:
+                <input type="email" id="email" required>
+                <span class="error" id="errorEmail">Formato inválido</span>
+            </label>
+        </fieldset>
+
+        <!-- Opciones de presupuesto -->
+        <fieldset>
+            <legend>Opciones de presupuesto</legend>
+            <label>Producto:
+                <select id="producto">
+                    <option value="1000">Producto A - 1000€</option>
+                    <option value="1500">Producto B - 1500€</option>
+                    <option value="2000">Producto C - 2000€</option>
+                </select>
+            </label>
+
+            <label>Plazo (meses):
+                <input type="number" id="plazo" min="1" max="36" value="1">
+            </label>
+
+            <div class="extras">
+                <label class="extras1"><input type="checkbox" class="extra" value="200"> Garantía extendida (+200€)</label>
+                <label class="extras2"><input type="checkbox" class="extra" value="100"> Instalación (+100€)</label>
+                <label class="extras3"><input type="checkbox" class="extra" value="50"> Envío urgente (+50€)</label>
+            </div>
+
+            <p class="total">Total: <span id="total">0</span> €</p>
+        </fieldset>
+
+        <!-- Condiciones -->
+        <fieldset>
+            <legend>Condiciones</legend>
+            <div class="condiciones">
+
+              <label for="condiciones">Acepto las condiciones de privacidad </label>
+              <input type="checkbox" name="checkbox" id="condiciones" required> 
+            </div>
+            
+            <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </fieldset>
+    </form>
+  </main>
+
+
+  <footer>
+    <p>
+      <strong>Redes Sociales:</strong><br>
+      <a href="https://www.instagram.com/">Instagram</a><br>
+      <a href="https://www.facebook.com/?locale=es_ES">Facebook</a><br>
+      <a href="https://workspace.google.com/intl/es/gmail/">Gmail</a>
+    </p>
+    <p>
+      <strong>Dirección:</strong><br>
+      <a class="direction" href="views/contacto.html" target="_blank">Av. Meza y Lopez 123, Las Palmas de Gran Canaria</a>
+    </p>
+    <p>
+      <strong>Aviso Legal:</strong><br>
+      Esta es una página de ejemplo.
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../js/presupuesto.js"></script>
+</body>
+</html>

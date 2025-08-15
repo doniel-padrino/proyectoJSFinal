@@ -1,0 +1,17 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 80vh;
+            width: 100%;
+        }
+        .info-box {
+            padding: 15px;
+            background: #f9f9f9;
+            border-top: 2px solid #ccc;
+        }
+        .info-box h2 {
+            margin: 0;
+        }

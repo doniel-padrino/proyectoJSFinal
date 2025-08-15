@@ -1,0 +1,16 @@
+{
+  "temas": [
+    {
+      "titulo": "Inteligencia Artificial",
+      "descripcion": "La IA está transformando el mundo con algoritmos que aprenden y toman decisiones autónomas."
+    },
+    {
+      "titulo": "Videojuegos",
+      "descripcion": "La industria de los videojuegos sigue creciendo con títulos más inmersivos y realistas cada año."
+    },
+    {
+      "titulo": "Programación",
+      "descripcion": "Aprender a programar es esencial en el mundo digital actual, con lenguajes como JavaScript, Python y más."
+    }
+  ]
+}
